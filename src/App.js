@@ -43,8 +43,8 @@ class App extends React.Component {
         <MainLayout>
           
           <AnimatedSwitch
-            Enter={{ opacity: 0, marginTop: 200 }}
-            Leave={{ opacity: 0, marginTop: -200 }}
+            atEnter={{ opacity: 0, marginTop: 200 }}
+            atLeave={{ opacity: 0, marginTop: -200 }}
             atActive={{ opacity: 1, marginTop: 0 }}
             className={styles.switchWrapper}
             location={location}>

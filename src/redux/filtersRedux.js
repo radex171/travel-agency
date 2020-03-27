@@ -42,14 +42,14 @@ export default function reducer(statePart = [], action = {}) {
       return {
         ...statePart,
         tags: [...statePart.tags,
-          action.payload.tag,
+          action.payload,
         ],
       };
     case REMOVE_TAG:
 
       return {
         ...statePart,
-        tags: statePart.tags.filter(tag =>(tag !== action.payload.tag)),
+        tags: statePart.tags.filter(tag =>(tag !== action.payload)),
       };
     default:
       return statePart;
