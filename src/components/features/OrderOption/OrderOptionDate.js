@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './OrderOption.scss';
+
 import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
- 
-// CSS Modules, react-datepicker-cssmodules.css
-// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+import '../../../../node_modules/react-datepicker/dist/react-datepicker-cssmodules.css';
+import styles from './OrderOption.scss';
+
  
 class OrderOptionDate  extends React.Component {
     static propTypes = {
@@ -26,6 +25,7 @@ class OrderOptionDate  extends React.Component {
       <DatePicker className={styles.input}
         selected={this.state.startDate}
         onChange={this.handleChange}
+        locale="pl-PL"
       />
     );
   }
