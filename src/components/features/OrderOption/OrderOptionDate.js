@@ -8,7 +8,7 @@ import styles from './OrderOption.scss';
  
 class OrderOptionDate  extends React.Component {
     static propTypes = {
-      setOptionValue: PropTypes.date,
+      setOptionValue: PropTypes.func,
     }
   state = {
     startDate: new Date(),

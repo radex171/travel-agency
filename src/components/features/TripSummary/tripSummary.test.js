@@ -16,6 +16,6 @@ describe ('component tripSummary', () =>{
 
     expect (component.find('img').prop('src').toEqual(expectedImageSrc));
     expect(component.find('img').prop('alt')).toEqual(expectedImageAlt);
-    console.log(component.debug());
+    
   });
 });
