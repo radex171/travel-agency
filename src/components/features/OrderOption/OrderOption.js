@@ -7,6 +7,7 @@ import OrderOptionIcons from './OrderOptionIcons';
 import OrderOptionNumber from './OrderOptionNumber';
 import OrderOptionText from './OrderOptionText';
 import OrderOptionDate from './OrderOptionDate';
+
 const optionTypes = {
   dropdown: OrderOptionDropdown,
   icons: OrderOptionIcons,
@@ -17,12 +18,14 @@ const optionTypes = {
 };
 
 const OrderOption =({name, type,id, setOrderOption, ...otherProps}) => {
+ 
   const OptionComponent = optionTypes[type] ;
   if(!OptionComponent){
     return null;
   }
   else {
     return (
+
       <div className={styles.component}>
         <h3 className={styles.title}>{name}</h3>
         <OptionComponent
