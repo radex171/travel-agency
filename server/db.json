@@ -1,0 +1,16 @@
+{
+  "orders": [
+    {
+      "name": "asd",
+      "contact": "asd",
+      "start-date": "2020-04-19T22:00:00.000Z",
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "totalCost": "$51,381",
+      "id": 1
+    }
+  ]
+}
