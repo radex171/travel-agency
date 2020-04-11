@@ -1,0 +1,18 @@
+.component {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .title, .promoTitle {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .title {
+    bottom: 40px;
+  }
+  
+  .promoTitle {
+    bottom: 10px;
+  }
