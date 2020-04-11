@@ -4,6 +4,13 @@ import PropTypes from 'prop-types';
 
 class HappyHourAd extends React.Component {
   
+  constructor(){
+    super();
+
+    setInterval(() => {
+      this.forceUpdate();
+    }, 1000);
+  } 
   static propTypes = {
     title: PropTypes.string,
   }
