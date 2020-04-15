@@ -6,7 +6,7 @@ describe ('Component Hero', () => {
   it('should render without crashing', () => {
     const component = shallow(<Hero titleText='Lorem ipsum' imageSrc='anything' />);
     expect(component).toBeTruthy();
-    console.log(component.debug());
+  
   });
 
   it('should throw error without required props', () => {
@@ -20,7 +20,7 @@ describe ('Component Hero', () => {
     const renderedTitle = component.find('.title').text();
     expect(renderedTitle).toEqual(expectedTitle);
     expect(component.find('.image').prop('src')).toEqual(expectedImage);
-    console.log(component.debug());
+    
   });
   it('renders correct classNames', () => {
     const mockVariants = 'small dummy';
@@ -36,5 +36,12 @@ describe ('Component Hero', () => {
     const component = shallow(<Hero titleText={expectedTitle} imageSrc={expectedImage} />);
 
     expect(component.find('HappyHourAd').length).toEqual(1);
+  });
+  it('should render daysToSummer', () => {
+    const expectedTitle = 'Lorem ipsum';
+    const expectedImage = 'image.jpg';
+    const component = shallow(<Hero titleText={expectedTitle} imageSrc={expectedImage} />);
+
+    expect(component.find('DaysToSummer').length).toEqual(1);
   });
 });

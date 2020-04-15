@@ -49,3 +49,13 @@
   left: 0;
   right: 0;
 }
+.daysToHoliday {
+  z-index: 999;
+  position: absolute;
+  top: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: rgb(245, 236, 236);
+  font-size: ($base-size * 2);
+  font-weight: bold;
+}
